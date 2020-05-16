@@ -1,0 +1,13 @@
+{
+    "name": "@nerdwallet/renovatebot-integrations",
+    "description": "NerdWallet renovatebot",
+    "author": "codeowner@nerdwallet.com",
+    "scripts": {
+        "renovate": "node renovate.js",
+    },
+    "dependencies": {
+        "@nerdwallet/app-config": "^1.0.11",
+        "renovate": "^19"
+    },
+    "devDependencies": {}
+}

@@ -1,0 +1,19 @@
+name: renovate-integrations
+
+tags:
+  - node
+
+repos:
+  release: apps-2019
+  snapshot: snapshot-2019
+
+tasks:
+  renovate:
+    role: renovate
+    command: "indy run renovate"
+    cpu: 256
+    log_to_cloudwatch: True
+    memory: 512
+    # every 8 hours starting at 4 AM
+    schedule: "0 4/8 * * ? *"
+    timeout: 300
