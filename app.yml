@@ -10,10 +10,10 @@ repos:
 tasks:
   renovate:
     role: renovate
-    command: "indy run renovate"
+    command: "indy run npm run renovate"
     cpu: 256
     log_to_cloudwatch: True
     memory: 512
-    # every 8 hours starting at 4 AM
-    schedule: "0 4/8 * * ? *"
+    # every 4 hours starting
+    schedule: "0 */4 * * *"
     timeout: 300
