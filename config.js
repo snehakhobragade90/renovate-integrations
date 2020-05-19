@@ -5,7 +5,7 @@ module.exports = {
   pipenv: {
     enabled: true,
   },
-  postUpateOptions: ["gomodTidy"],
+  postUpdateOptions: ["gomodTidy"],
   python: {
     registryUrls: [
       "https://artifactory.nerdwallet.io/artifactory/api/pypi/pypi-public-test/simple/",
