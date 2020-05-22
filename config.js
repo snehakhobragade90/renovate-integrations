@@ -12,6 +12,7 @@ module.exports = {
     enabled: true,
   },
   postUpdateOptions: ["gomodTidy"],
+  prConcurrentLimit: 1,
   python: {
     registryUrls: [
       "https://artifactory.nerdwallet.io/artifactory/api/pypi/pypi-public-test/simple/",
