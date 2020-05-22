@@ -26,6 +26,7 @@ module.exports = {
     // "NerdWallet/logger.nerdwallet",
     "NerdWallet/yak",
   ],
+  schedule: ["after 9am and before 5pm on every weekday"],
   separateMultipleMajor: true,
   unicodeEmoji: true,
 };
