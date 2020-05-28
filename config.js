@@ -2,6 +2,12 @@ module.exports = {
   // logLevel: "debug",
   logFile: "renovate.log",
   npmrc: "registry=https://artifactory.nerdwallet.io/artifactory/api/npm/npm",
+  packageRules: [
+    {
+      updateTypes: ["minor", "patch", "pin", "digest"],
+      automerge: true,
+    },
+  ],
   pipenv: {
     enabled: true,
   },
