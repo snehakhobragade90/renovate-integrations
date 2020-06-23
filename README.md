@@ -4,19 +4,16 @@ This is a collection of configurations for automating dependency upgrades with [
 
 ## Get Started
 
+_In an effort to minimize duplication, we won't repeat what Renovate has already documented, for example the [Renovate JS docs](https://docs.renovatebot.com/javascript/). We'll try to focus on NerdWallet-specific info._
+
 Renovate will support most languages we use at NerdWallet, including:
 - Python
 - Go
 - JavaScript
 
-### JavaScript
+### Local Testing
 
-_In an effort to minimize duplication, we won't repeat what the [Renovate JS docs](https://docs.renovatebot.com/javascript/) already note. Other
-information will be NerdWallet-specific._
-
-Until we've widespread adoption, we'll be opting in to repos. There are a couple steps to onboard your repo
-
-1. [Onboard PR](https://docs.renovatebot.com/configure-renovate/)
+Until we've widespread adoption, we'll be opting in to repos.
 
 For local testing, you can isolate specific repos in
 
@@ -32,11 +29,13 @@ module.exports = {
 };
 ```
 
- and then invoke Renovate with something like,
+ and then invoke Renovate with a [GitHub personal access token][Renovate PAT],
 
 ```sh
 ./node_modules/.bin/renovate --token=YOUR_GITHUB_PERSONAL_ACCESS_TOKEN
 ```
+
+This should open a PR against that repo in question. See the [Renovate onboard PR](https://docs.renovatebot.com/configure-renovate/) for more details.
 
 ## FAQ
 
@@ -50,6 +49,7 @@ Renovate matches any PR (even closed) with the name "Configure Renovate". To rec
 ## Related
 - [Automated Dependency Bumps RFC](https://docs.google.com/document/d/13lON_1DHZKOuL839nNzQqKvI91Bd9Z1fazt9ZdiCwz4/edit)
 
+[Renovate PAT]: https://docs.renovatebot.com/install-gitlab-app/#generate-a-personal-access-token
 [reconfigure Renovate]: https://sourcegraph.com/github.com/renovatebot/renovate@08922f4fba8cd8ba1ed655092bcbd1976df4675b/-/blob/docs/usage/reconfigure-renovate.md
 
 
