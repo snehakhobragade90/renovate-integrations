@@ -18,7 +18,21 @@ Until we've widespread adoption, we'll be opting in to repos. There are a couple
 
 1. [Onboard PR](https://docs.renovatebot.com/configure-renovate/)
 
-For testing renovate locally, you can run something like,
+For local testing, you can isolate specific repos in
+
+```js
+// config.js
+module.exports = {
+  // ...
+  repositories: [
+    // ...
+    // "NerdWallet/yak",
+    "NerdWallet/nwjs-deprecate",
+  ],
+};
+```
+
+ and then invoke Renovate with something like,
 
 ```sh
 ./node_modules/.bin/renovate --token=YOUR_GITHUB_PERSONAL_ACCESS_TOKEN
