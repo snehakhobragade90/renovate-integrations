@@ -27,13 +27,13 @@ module.exports = {
     ],
   },
   repositories: [
-    // Python
+    // Go and Python
+    "NerdWallet/yak",
+    // "NerdWallet/features.nerdwallet",
     // "NerdWallet/identity.nerdwallet",
     // "NerdWallet/indy",
     // "NerdWallet/logger.nerdwallet",
-    // "NerdWallet/yak",
     // "NerdWallet/nwpy-gunicorn",
-    // "NerdWallet/features.nerdwallet",
     // "NerdWallet/user-data-platform",
 
     // JavaScript
