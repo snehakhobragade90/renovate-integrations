@@ -3,11 +3,11 @@
   "description": "NerdWallet renovatebot",
   "author": "codeowner@nerdwallet.com",
   "scripts": {
-    "renovate": "node renovate.js"
+    "renovate": "node renovate"
   },
   "dependencies": {
     "@nerdwallet/app-config": "^1.0.11",
-    "renovate": "^19.239.8"
+    "renovate": "^19.239.11"
   },
   "devDependencies": {},
   "license": "UNLICENSED"
