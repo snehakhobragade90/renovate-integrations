@@ -1,0 +1,21 @@
+name: renovate-integrations
+
+tags:
+  - node
+
+repos:
+  release: apps-2019
+  snapshot: snapshot-2019
+
+tasks:
+  renovate:
+    role: renovate
+    command: "indy run npm run renovate"
+    cpu: 256
+    log_to_cloudwatch: True
+    memory: 512
+    # every 4 hours starting
+    schedule: "0 */4 * * *"
+    timeout: 300
+    environment:
+      GONOSUMDB: "github.com/NerdWallet"
