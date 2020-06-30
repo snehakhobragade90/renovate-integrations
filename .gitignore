@@ -1,6 +1,11 @@
+# GitHub testing
+.github_token
+
 node_modules
 build/
 configs/
 
 # Renovate
 renovate.log
+
+dist/
