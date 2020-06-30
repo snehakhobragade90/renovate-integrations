@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node renovate",
     "renovate": "node renovate",
-    "test": "node renovate"
+    "test": "NODE_ENV=test node renovate"
   },
   "dependencies": {
     "@nerdwallet/app-config": "^1.4.6",
