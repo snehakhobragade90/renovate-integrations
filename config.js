@@ -48,5 +48,8 @@ module.exports = {
   ],
   schedule: ["after 9am and before 5pm on every weekday"],
   separateMultipleMajor: true,
+  // Note: we can configure the GitHub
+  // personal access token in config.js here, as well
+  // token: "",
   unicodeEmoji: true,
 };

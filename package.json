@@ -1,14 +1,19 @@
 {
-  "name": "@nerdwallet/renovatebot-integrations",
-  "description": "NerdWallet renovatebot",
+  "name": "@nerdwallet/renovate-integrations",
+  "description": "Renovate bot integrations for the NerdWallet codebase.",
   "author": "codeowner@nerdwallet.com",
   "scripts": {
-    "renovate": "node renovate"
+    "start": "node index",
+    "renovate": "./node_modules/.bin/renovate",
+    "test": "NODE_ENV=test node test"
   },
   "dependencies": {
     "@nerdwallet/app-config": "^1.0.11",
-    "renovate": "^19.239.11"
+    "renovate": "^21.21.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chalk": "^4.1.0",
+    "core-js": "^2.6.11"
+  },
   "license": "UNLICENSED"
 }

@@ -1,6 +1,12 @@
+# GitHub token for local testing
+.github_token
+
 node_modules
 build/
 configs/
 
 # Renovate
 renovate.log
+
+# Editor config
+.vscode/
