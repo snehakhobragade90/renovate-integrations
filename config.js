@@ -1,8 +1,12 @@
 /**
  * This file contains specific configuration options
  * for Renovate. We can opt in to specific repos,
- * ignore packages, etc here.
+ * ignore packages, set the GitHub personal access token, etc here.
  */
+
+ // Renovate requires a GitHub token, which `nwjs-app-config`
+// will automatically decrypt from the devops.yml app-config.
+const config = require("@nerdwallet/app-config");
 
 module.exports = {
   ignoreDeps: [
@@ -48,8 +52,10 @@ module.exports = {
   ],
   schedule: ["after 9am and before 5pm on every weekday"],
   separateMultipleMajor: true,
-  // Note: we can configure the GitHub
-  // personal access token in config.js here, as well
-  // token: "",
+  // We set the token directly in the config as opposed
+  // to a command line arg, as we want to avoid
+  // logging the token. For more details on the PAT, see
+  // https://github.com/renovatebot/renovate/blob/master/docs/development/self-hosting.md#github-enterprise
+  token: config.RENOVATE.AUTH.GITHUB_ACCESS_TOKEN,
   unicodeEmoji: true,
 };

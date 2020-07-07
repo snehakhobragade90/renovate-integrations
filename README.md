@@ -1,12 +1,13 @@
-[Renovate]: (https://github.com/renovatebot/renovate)
+[app-config token]: https://github.com/NerdWallet/app-configs/blob/master/deployable/renovate-integrations/devops.yml#L9
+[giftshop]: https://giftshop.nerdwallet.io/applications/renovate-integrations/
+[Renovate]: https://github.com/renovatebot/renovate
 [Renovate JS Docs]: (https://docs.renovatebot.com/javascript/)
 [Renovate onboard PR]: (https://docs.renovatebot.com/configure-renovate/)
 [Renovate PAT]: https://docs.renovatebot.com/install-gitlab-app/#generate-a-personal-access-token
 [reconfigure Renovate]: https://sourcegraph.com/github.com/renovatebot/renovate@08922f4fba8cd8ba1ed655092bcbd1976df4675b/-/blob/docs/usage/reconfigure-renovate.md
 
-# Renovate Integrations
 
-_To minimize duplication, we won't repeat Renovate's docs here. For example, see [Renovate JS docs]. This README will focus on NerdWallet-specific info._
+# Renovate Integrations
 
 This is the centralized configuration for automating dependency upgrades across the NerdWallet codebase with [Renovate].
 
@@ -46,7 +47,7 @@ and open your pull request for review!
 
 ## Usage
 
-The `renovate.js` script is intended to be run on a cadence in a DevOps (ProdEng) cluster, to periodically open pull requests against repositories that've opted in.
+The `index.js` entry point is intended to run on a cadence in a [DevOps (ProdEng) cluster][giftshop], to periodically open pull requests against repositories that've opted in.
 
 Renovate will support most languages we use at NerdWallet, including:
 - Go
@@ -56,10 +57,11 @@ Renovate will support most languages we use at NerdWallet, including:
 
 ### Development
 
-<details><summary>How do I test renovate locally?</summary>
+<details><summary>How do I test Renovate locally?</summary>
+
 #### Local Testing
 
-Until we've widespread adoption, we'll be opting in to repos.
+Until we've widespread adoption, repos will opt in to automated dependency goodness.
 
 For local testing, you can isolate specific repos in
 
@@ -81,10 +83,18 @@ module.exports = {
 
 This should open a PR against that repo in question. See the [Renovate onboard PR] for more details.
 
+We rely on a GitHub token that's encrypted in a [`devops.yml` app-config][app-config token]. If you'd like to experiment with decrypting tokens locally, modify `builds/config.json` and prepend the script with
+
+```sh
+AWS_PROFILE=nwdev npm start
+```
+
 </details>
 
 
 ## Learn More
+
+_To minimize duplication, this README focuses on NerdWallet-specific info and doesn't repeat Renovate's docs, e.g. [Renovate JS docs]._
 
 ### FAQ
 <details><summary>How do I reconfigure my onboarding PR?</summary>
