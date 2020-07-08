@@ -38,18 +38,11 @@ module.exports = {
     ],
   },
   repositories: [
-    // Go and Python
-    "NerdWallet/yak",
-    // "NerdWallet/features.nerdwallet",
-    // "NerdWallet/identity.nerdwallet",
-    // "NerdWallet/indy",
-    // "NerdWallet/logger.nerdwallet",
-    // "NerdWallet/nwpy-gunicorn",
-    // "NerdWallet/user-data-platform",
-
-    // JavaScript
     "NerdWallet/nwjs-deprecate",
     "NerdWallet/nwjs-yakclient"
+    "NerdWallet/renovate-integrations",
+    "NerdWallet/snyk-integrations",
+    "NerdWallet/yak",
   ],
   // TODO: ignoring for now; we should align this with
   // the scheduled cron after testing
