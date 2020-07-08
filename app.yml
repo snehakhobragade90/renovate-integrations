@@ -9,7 +9,6 @@ repos:
 
 tasks:
   renovate:
-    role: renovate
     command: "indy run npm run renovate"
     cpu: 256
     log_to_cloudwatch: True
