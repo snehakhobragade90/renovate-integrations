@@ -8,7 +8,8 @@
     "start": "node index",
     "renovate": "./node_modules/.bin/renovate",
     "test:app-configs": "AWS_PROFILE=nwdev npm start",
-    "test": "NODE_ENV=test node test"
+    "test:local": "NODE_ENV=test node test",
+    "test": "echo 'No tests yet.'"
   },
   "dependencies": {
     "@nerdwallet/app-config": "^1.0.11",
