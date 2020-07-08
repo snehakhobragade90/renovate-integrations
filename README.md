@@ -5,6 +5,7 @@
 [Renovate onboard PR]: (https://docs.renovatebot.com/configure-renovate/)
 [Renovate PAT]: https://docs.renovatebot.com/install-gitlab-app/#generate-a-personal-access-token
 [reconfigure Renovate]: https://sourcegraph.com/github.com/renovatebot/renovate@08922f4fba8cd8ba1ed655092bcbd1976df4675b/-/blob/docs/usage/reconfigure-renovate.md
+[ops-apps]: https://console.aws.amazon.com/ecs/home?region=us-east-1#/clusters/ops-apps/scheduledTasks
 
 
 # Renovate Integrations
@@ -13,10 +14,9 @@ This is the centralized configuration for automating dependency upgrades across 
 
 This is the repository to onboard your project to profit from automatic dependency updates.
 
-## Get Started
+## Start
 
-To onboard your project to Renovate, we take a similar approach
-to onboarding new projects to the `app-configs` project:
+For onboarding new projects, we take a similar approach to onboarding in `app-configs`. First,
 
 ```sh
 indy get renovate-integrations
@@ -47,9 +47,9 @@ and open your pull request for review!
 
 ## Usage
 
-The `index.js` entry point is intended to run on a cadence in a [DevOps (ProdEng) cluster][giftshop], to periodically open pull requests against repositories that've opted in.
+This project is deployed with [Gift Shop][giftshop] and the `index.js` entry point is invoked on a scheduled cadence in a [ProdEng cluster][ops-apps]. It periodically opens pull requests against repositories that've opted in.
 
-Renovate will support most languages we use at NerdWallet, including:
+Renovate supports most languages we use at NerdWallet, including:
 - Go
 - JavaScript
 - Python
@@ -88,6 +88,17 @@ We rely on a GitHub token that's encrypted in a [`devops.yml` app-config][app-co
 ```sh
 AWS_PROFILE=nwdev npm start
 ```
+
+</details>
+
+<details><summary>How do I monitor Renovate once it's deployed?</summary>
+
+#### Observability
+
+We run Renovate as a scheduled task within ECS. Here are some useful links:
+- [CloudWatch logs](https://us-east-1.console.aws.amazon.com/cloudwatch/home?region=us-east-1#metricsV2:graph=~(view~'timeSeries~stacked~false~title~'Renovate*20Integrations);query=~'*7bAWS*2fEvents*2cRuleName*7d*20ecs-schedule-ops-apps-renovate-integrations-renovate)
+- [ops-apps cluster][ops-apps]
+
 
 </details>
 

@@ -49,7 +49,11 @@ module.exports = {
 
     // JavaScript
     "NerdWallet/nwjs-deprecate",
+    "NerdWallet/nwjs-yakclient"
   ],
+  // TODO: ignoring for now; we should align this with
+  // the scheduled cron after testing
+  // schedule: ["after 9am and before 5pm on every weekday"],
   separateMultipleMajor: true,
   // We set the token directly in the config as opposed
   // to a command line arg, as we want to avoid
