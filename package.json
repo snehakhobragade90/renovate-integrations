@@ -4,6 +4,7 @@
   "author": "codeowner@nerdwallet.com",
   "scripts": {
     "build": "true",
+    "lint": "true",
     "start": "node index",
     "renovate": "./node_modules/.bin/renovate",
     "test:app-configs": "AWS_PROFILE=nwdev npm start",
