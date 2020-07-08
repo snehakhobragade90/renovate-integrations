@@ -3,6 +3,7 @@
   "description": "Renovate bot integrations for the NerdWallet codebase.",
   "author": "codeowner@nerdwallet.com",
   "scripts": {
+    "build": "true",
     "start": "node index",
     "renovate": "./node_modules/.bin/renovate",
     "test:app-configs": "AWS_PROFILE=nwdev npm start",
