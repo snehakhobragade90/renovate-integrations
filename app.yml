@@ -14,8 +14,12 @@ tasks:
     cpu: 256
     log_to_cloudwatch: True
     memory: 512
-    # every 4 hours starting
-    schedule: "0 */4 * * ? *"
+    # AWS scheduled tasks are slightly
+    # different than normal cron:
+    # https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html#CronExpressions
+    # This should be every 2 hours, with the
+    # ? signifying the day doesn't matter
+    schedule: "0 */2 * * ? *"
     timeout: 300
     environment:
       GONOSUMDB: "github.com/NerdWallet"
