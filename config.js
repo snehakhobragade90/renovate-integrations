@@ -44,8 +44,9 @@ module.exports = {
     ],
   },
   repositories: [
-    "NerdWallet/nwjs-deprecate",
-    "NerdWallet/nwjs-yakclient",
+    // Please keep this list alphabetized.
+    // See https://nerdwallet.slack.com/archives/CU7H81PTP/p1594396900059600.
+    "NerdWallet/eng-blog-client",
     "NerdWallet/nwgo-api",
     "NerdWallet/nwgo-app-config",
     "NerdWallet/nwgo-deployable",
@@ -56,6 +57,8 @@ module.exports = {
     "NerdWallet/nwgo-logging",
     "NerdWallet/nwgo-metrics",
     "NerdWallet/nwgo-resty",
+    "NerdWallet/nwjs-deprecate",
+    "NerdWallet/nwjs-yakclient",
     "NerdWallet/nwpy-yakclient",
     "NerdWallet/renovate-integrations",
     "NerdWallet/snyk-integrations",
