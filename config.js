@@ -55,6 +55,7 @@ module.exports = {
     "NerdWallet/nwgo-http-api-client",
     "NerdWallet/nwgo-identity-sdk",
     "NerdWallet/nwgo-logging",
+    "NerdWallet/nwgo-marketplace-client",
     "NerdWallet/nwgo-metrics",
     "NerdWallet/nwgo-resty",
     "NerdWallet/nwjs-deprecate",
