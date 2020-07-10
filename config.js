@@ -26,6 +26,13 @@ module.exports = {
       updateTypes: ["minor", "patch", "pin", "digest"],
       automerge: true,
     },
+    {
+      "groupName": "boto",
+      "packagePatterns": [
+        "^boto.*"
+      ]
+    }
+  ]
   ],
   pipenv: {
     enabled: true,
