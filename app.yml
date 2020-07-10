@@ -3,6 +3,8 @@ name: renovate-integrations
 tags:
   - node
 
+continuous_deployment: ["devops"]
+
 repos:
   release: apps-2019
   snapshot: snapshot-2019
