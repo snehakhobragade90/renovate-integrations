@@ -46,6 +46,8 @@ module.exports = {
   repositories: [
     "NerdWallet/nwjs-deprecate",
     "NerdWallet/nwjs-yakclient",
+    "NerdWallet/nwgo-yakclient",
+    "NerdWallet/nwpy-yakclient",
     "NerdWallet/renovate-integrations",
     "NerdWallet/snyk-integrations",
     "NerdWallet/yak",
