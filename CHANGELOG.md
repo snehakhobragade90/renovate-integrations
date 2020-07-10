@@ -2,4 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/NerdWallet/renovate-integrations/compare/v1.0.14...v1.1.0) (2020-07-10)
+
+
+### Features
+
+* onboard eng-blog-client ([#23](https://github.com/NerdWallet/renovate-integrations/issues/23)) ([2bc311f](https://github.com/NerdWallet/renovate-integrations/commit/2bc311f6d2aba20297db852667e1442c8ffca5f9))
+
 ### [1.0.14](https://github.com/NerdWallet/renovate-integrations/compare/v1.0.12...v1.0.14) (2020-07-10)
