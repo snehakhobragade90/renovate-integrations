@@ -29,10 +29,9 @@ module.exports = {
     {
       "groupName": "boto",
       "packagePatterns": [
-        "^boto.*"
-      ]
-    }
-  ]
+        "^boto.*",
+      ],
+    },
   ],
   pipenv: {
     enabled: true,
