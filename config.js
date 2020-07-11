@@ -132,7 +132,6 @@ module.exports = {
          "^setproctitle",
          "^setuptools",
          "^simplejson",
-         "^sqlalchemy-utils",
          "^six",
          "^typing",
          "^urllib",
