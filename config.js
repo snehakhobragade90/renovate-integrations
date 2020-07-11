@@ -34,6 +34,7 @@ module.exports = {
          "nwgo-app-config",
          "nwgo-deployable",
          "nwgo-echo",
+         "nwgo-encrypt",
          "nwgo-http-api-client",
          "nwgo-identity-sdk",
          "nwgo-logging",
