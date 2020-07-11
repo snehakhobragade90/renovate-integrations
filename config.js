@@ -35,9 +35,9 @@ module.exports = {
          "^nwgo-deployable",
          "^nwgo-echo",
          "^nwgo-identity-sdk",
-         "^nwgo-resty",
          "^nwgo-logging",
          "^nwgo-metrics",
+         "^nwgo-resty",
       ],
     },
     {
