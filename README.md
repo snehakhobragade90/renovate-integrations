@@ -96,9 +96,7 @@ AWS_PROFILE=nwdev npm start
 #### Observability
 
 We run Renovate as a scheduled task within ECS. Here are some useful links:
-- [CloudWatch logs](https://us-east-1.console.aws.amazon.com/cloudwatch/home?region=us-east-1#metricsV2:graph=~(view~'timeSeries~stacked~false~title~'Renovate*20Integrations);query=~'*7bAWS*2fEvents*2cRuleName*7d*20ecs-schedule-ops-apps-renovate-integrations-renovate)
-- [ops-apps cluster][ops-apps]
-
+- [Logs](https://elk.nerdwallet.io/goto/2092febf617740546171995d530f7413)
 
 </details>
 
