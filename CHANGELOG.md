@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.21](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.20...v1.1.21) (2020-07-11)
+
+
+### Bug Fixes
+
+* more popular golang libs ([1744d82](https://github.com/NerdWallet/renovate-integrations/commit/1744d823e83c803e6cad1b6d8140b310cae61efd))
+
 ### [1.1.20](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.17...v1.1.20) (2020-07-11)
 
 
