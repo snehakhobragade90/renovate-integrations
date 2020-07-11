@@ -33,6 +33,7 @@ module.exports = {
          "^blinker",
          "^boto",
          "^certifi",
+         "^chardet",
          "^click",
          "^decorator",
          "^docutils",
