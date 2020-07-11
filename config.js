@@ -105,7 +105,7 @@ module.exports = {
          "^promise",
          "^pyasn1",
          "^pycparser",
-         "^pycryptome",
+         "^pycryptodome",
          "^pyjwt",
          "^pyopenssl",
          "^python-crfsuite",
