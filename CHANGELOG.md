@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.24](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.23...v1.1.24) (2020-07-11)
+
+
+### Bug Fixes
+
+* add freezegun to popular packages ([bcf8faa](https://github.com/NerdWallet/renovate-integrations/commit/bcf8faacc119fa151cf032f40c911c45cde09681))
+
 ### [1.1.23](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.22...v1.1.23) (2020-07-11)
 
 
