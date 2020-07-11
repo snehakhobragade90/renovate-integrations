@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.10](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.9...v1.1.10) (2020-07-11)
+
+
+### Bug Fixes
+
+* grow boto to group of basic python libs ([586a597](https://github.com/NerdWallet/renovate-integrations/commit/586a597ebdd24f772d90a2b5509ca556e891dfbf))
+
 ### [1.1.9](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.8...v1.1.9) (2020-07-11)
 
 ### [1.1.8](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.7...v1.1.8) (2020-07-11)
