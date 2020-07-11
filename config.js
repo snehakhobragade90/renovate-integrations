@@ -18,7 +18,7 @@ module.exports = {
     "eslint-plugin-jest",
     "prettier",
   ],
-  logLevel: "debug",
+  logLevel: "info",
   logFile: "renovate.log",
   npmrc: "registry=https://artifactory.nerdwallet.io/artifactory/api/npm/npm",
   packageRules: [
