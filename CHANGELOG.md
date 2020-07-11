@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.11](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.9...v1.1.11) (2020-07-11)
+
+
+### Bug Fixes
+
+* add chardet to basic Python libs ([9eb2d9b](https://github.com/NerdWallet/renovate-integrations/commit/9eb2d9b37f1a873290770227a4a91d039e426000))
+* add setuptools to base python pkgs ([e63b63d](https://github.com/NerdWallet/renovate-integrations/commit/e63b63d39b9cc58be40fca3918c72f412dc6df6a))
+* grow boto to group of basic python libs ([586a597](https://github.com/NerdWallet/renovate-integrations/commit/586a597ebdd24f772d90a2b5509ca556e891dfbf))
+
 ### [1.1.10](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.9...v1.1.10) (2020-07-11)
 
 
