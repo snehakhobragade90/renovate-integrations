@@ -27,9 +27,23 @@ module.exports = {
       automerge: true,
     },
     {
-      "groupName": "popular Python libs",
-      "languages": ["python"],
-      "packagePatterns": [
+      groupName: "core NW Go libs",
+      languages: ["golang"],
+      packagePatterns: [
+         "^nwgo-api",
+         "^nwgo-app-config",
+         "^nwgo-deployable",
+         "^nwgo-echo",
+         "^nwgo-identity-sdk",
+         "^nwgo-resty",
+         "^nwgo-logging",
+         "^nwgo-metrics",
+      ],
+    },
+    {
+      groupName: "popular Python libs",
+      languages: ["python"],
+      packagePatterns: [
          "^aniso8601",
          "^billiard",
          "^bcrypt",
