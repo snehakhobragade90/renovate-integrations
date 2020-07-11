@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.25](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.24...v1.1.25) (2020-07-11)
+
+
+### Bug Fixes
+
+* add nwgo-yakclient to core go libs ([8a2ad7e](https://github.com/NerdWallet/renovate-integrations/commit/8a2ad7e363facead22af99d474ef4dd2c558c856))
+
 ### [1.1.24](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.23...v1.1.24) (2020-07-11)
 
 
