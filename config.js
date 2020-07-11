@@ -39,6 +39,7 @@ module.exports = {
          "nwgo-logging",
          "nwgo-metrics",
          "nwgo-resty",
+         "nwgo-yakclient",
       ],
     },
     {
