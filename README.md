@@ -37,7 +37,7 @@ indy {
     base = 'ubuntu-2018.12.18'
     install = true  // Everyone should have this so that when Indy breaks (*not if*), we have the ability to set this false and get on with our lives while the issue gets fixed at HEAD.
     env = [
-        "INDY_STANDARD_CHANGELOG=yes",  // These are not likely to be required for long, however they are safe to set and leave forever.
+        "INDY_STANDARD_CHANGELOG=yes",
         "INDY_STANDARD_VERSION=yes",
     ]
 }
