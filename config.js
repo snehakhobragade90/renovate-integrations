@@ -42,6 +42,7 @@ module.exports = {
          "^lz4",
          "^python-dateutil",
          "^pytz",
+         "^setuptools",
          "^six",
          "^urllib",
          "^werkzeug",
