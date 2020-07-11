@@ -119,6 +119,7 @@ module.exports = {
          "^python-jose",
          "^python-json-logger",
          "^python-levenshtein",
+         "^pytest",
          "^pytz",
          "^pyyaml",
          "^raven",
