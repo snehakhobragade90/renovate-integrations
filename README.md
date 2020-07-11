@@ -15,32 +15,35 @@ This is the centralized configuration for automating dependency upgrades across 
 
 This is the repository to onboard your project to profit from automatic dependency updates.
 
-## Start
+## Onboarding
 
-For onboarding new projects, we take a similar approach to onboarding in `app-configs`. First,
-
-```sh
-indy get renovate-integrations
-cd renovate-integrations
-git checkout -b onboard/project-name
-```
-
-Now update the `repositories` field in `config.js`, e.g.
+If you just want to onboard your project, [edit `config.js` right here](https://github.com/NerdWallet/renovate-integrations/edit/master/config.js) and add your repo, e.g:
 
 ```js
 // config.js
 module.exports = {
   repositories: [
     // ... pre-existing projects
-    "NerdWallet/project-name"
+    "NerdWallet/your-project-here"
+    // ...
   ],
 };
 ```
 
+Renovate will send an onboarding PR to your repo to configure it.  You should also configure your repository to automatically manage the `CHANGELOG.md` and `VERSION` files based on the commitm message.  To do that, make sure your repository has the following in its Jenkinsfile:
 
-[It's easiest to edit the file and make a pull request right here in GitHub.](https://github.com/NerdWallet/renovate-integrations/edit/master/config.js)
+```groovy
+indy {
+    base = 'ubuntu-2018.12.18'
+    install = true  // Everyone should have this so if Indy breaks, we detect it early and can set this false.
+    env = [
+        "INDY_STANDARD_CHANGELOG=yes",  // These are not likely to be required for now, but they are safe to set and leave forever.
+        "INDY_STANDARD_VERSION=yes",
+    ]
+}
 
-Your request will be tested and, if it passes, approved by an approval bot.
+```
+
 
 ## Usage
 
