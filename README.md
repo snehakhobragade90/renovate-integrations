@@ -1,11 +1,12 @@
 [app-config token]: https://github.com/NerdWallet/app-configs/blob/master/deployable/renovate-integrations/devops.yml#L9
 [giftshop]: https://giftshop.nerdwallet.io/applications/renovate-integrations/
-[Renovate]: https://github.com/renovatebot/renovate
+[ops-apps]: https://console.aws.amazon.com/ecs/home?region=us-east-1#/clusters/ops-apps/scheduledTasks
+[reconfigure Renovate]: https://sourcegraph.com/github.com/renovatebot/renovate@08922f4fba8cd8ba1ed655092bcbd1976df4675b/-/blob/docs/usage/reconfigure-renovate.md
 [Renovate JS Docs]: (https://docs.renovatebot.com/javascript/)
 [Renovate onboard PR]: (https://docs.renovatebot.com/configure-renovate/)
 [Renovate PAT]: https://docs.renovatebot.com/install-gitlab-app/#generate-a-personal-access-token
-[reconfigure Renovate]: https://sourcegraph.com/github.com/renovatebot/renovate@08922f4fba8cd8ba1ed655092bcbd1976df4675b/-/blob/docs/usage/reconfigure-renovate.md
-[ops-apps]: https://console.aws.amazon.com/ecs/home?region=us-east-1#/clusters/ops-apps/scheduledTasks
+[Renovate]: https://github.com/renovatebot/renovate
+[semantic-commits]: https://github.com/conventional-changelog/standard-version
 
 
 # Renovate Integrations
@@ -36,14 +37,10 @@ module.exports = {
 };
 ```
 
-Push your change,
 
-```sh
-git add config.js && git commit -m "feat: onboard project-name to Renovate" && git push
-```
+[It's easiest to edit the file and make a pull request right here in GitHub.](https://github.com/NerdWallet/renovate-integrations/edit/master/config.js)
 
-and open your pull request for review!
-
+Your request will be tested and, if it passes, approved by an approval bot.
 
 ## Usage
 
@@ -116,5 +113,3 @@ Renovate matches any PR (even closed) with the name "Configure Renovate". To rec
 
 ### Related Links
 - [Automated Dependency Bumps RFC](https://docs.google.com/document/d/13lON_1DHZKOuL839nNzQqKvI91Bd9Z1fazt9ZdiCwz4/edit)
-
-
