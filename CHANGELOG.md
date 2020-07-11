@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.19](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.17...v1.1.19) (2020-07-11)
+
+
+### Bug Fixes
+
+* add group of core NW Go libs ([d6b7d62](https://github.com/NerdWallet/renovate-integrations/commit/d6b7d620df5053a4325f5fe5b505fb5fceebded6))
+* sort order ([a40809b](https://github.com/NerdWallet/renovate-integrations/commit/a40809bb0368992716b5b5cdec5609fc08bbc0fa))
+
 ### [1.1.18](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.17...v1.1.18) (2020-07-11)
 
 
