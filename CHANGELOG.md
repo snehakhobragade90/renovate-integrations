@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.23](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.22...v1.1.23) (2020-07-11)
+
+
+### Bug Fixes
+
+* add datadog to popular python libs ([569b4f9](https://github.com/NerdWallet/renovate-integrations/commit/569b4f96108f3d0c7126fcc882c1247beec2aebc))
+
 ### [1.1.22](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.21...v1.1.22) (2020-07-11)
 
 
