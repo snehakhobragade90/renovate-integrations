@@ -30,7 +30,7 @@ module.exports = {
 };
 ```
 
-Renovate will send an onboarding PR to your repo to configure it.  You should also configure your repository to automatically manage the `CHANGELOG.md` and `VERSION` files based on the commitm message.  To do that, make sure your repository has the following in its Jenkinsfile:
+Renovate will send an onboarding PR there.  You should also check your repos `Jenkinsfile` to be sure you have Indy set to automatically manage the `CHANGELOG.md` and `VERSION` files:
 
 ```groovy
 indy {
