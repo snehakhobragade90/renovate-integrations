@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.31](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.30...v1.1.31) (2020-07-11)
+
+
+### Bug Fixes
+
+* remove sqlalchemy-utils from popular Py libs ([ed19311](https://github.com/NerdWallet/renovate-integrations/commit/ed19311ca75e2a4df3ed11efcaaf2f19040148ad))
+
 ### [1.1.30](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.29...v1.1.30) (2020-07-11)
 
 
