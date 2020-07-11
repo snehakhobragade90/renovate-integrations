@@ -75,6 +75,7 @@ module.exports = {
          "^click",
          "^colorlog",
          "^cryptography",
+         "^datadog",
          "^decorator",
          "^docutils",
          "^flask",
