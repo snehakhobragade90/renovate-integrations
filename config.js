@@ -75,6 +75,8 @@ module.exports = {
     "NerdWallet/renovate-integrations",
     "NerdWallet/snyk-integrations",
     "NerdWallet/yak",
+    "NerdWallet/yak-herder",
+    "NerdWallet/yak-tap",
   ],
   // TODO: ignoring for now; we should align this with
   // the scheduled cron after testing
