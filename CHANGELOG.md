@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.15](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.13...v1.1.15) (2020-07-11)
+
+
+### Bug Fixes
+
+* add more base python libs ([4e79c8e](https://github.com/NerdWallet/renovate-integrations/commit/4e79c8ef3e2735ff0fe94aa58837382fa84c5001))
+
 ### [1.1.14](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.13...v1.1.14) (2020-07-11)
 
 ### [1.1.13](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.12...v1.1.13) (2020-07-11)
