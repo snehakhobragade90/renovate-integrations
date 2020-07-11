@@ -49,6 +49,7 @@ module.exports = {
     "NerdWallet/eng-blog-client",
     "NerdWallet/fdp-source-qa",
     "NerdWallet/nw_api",
+    "NerdWallet/nwgo-anti-fraud",
     "NerdWallet/nwgo-api",
     "NerdWallet/nwgo-app-config",
     "NerdWallet/nwgo-deployable",
