@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.29](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.28...v1.1.29) (2020-07-11)
+
+
+### Bug Fixes
+
+* add nwutils to core NW Python libs ([793e983](https://github.com/NerdWallet/renovate-integrations/commit/793e9831a14b5ece19bbc3d812613d141a73209b))
+
 ### [1.1.28](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.27...v1.1.28) (2020-07-11)
 
 
