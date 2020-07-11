@@ -62,6 +62,8 @@ module.exports = {
     "NerdWallet/nwjs-deprecate",
     "NerdWallet/nwjs-yakclient",
     "NerdWallet/nwpy-app-config",
+    "NerdWallet/nwpy-data-api",
+    "NerdWallet/nwpy-logical-models",
     "NerdWallet/nwpy-logging",
     "NerdWallet/nwpy-http-sdks",
     "NerdWallet/nwpy-nwmonitor",
