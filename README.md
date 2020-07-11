@@ -30,7 +30,7 @@ module.exports = {
 };
 ```
 
-Renovate will send an onboarding PR there.  You should also check your repos `Jenkinsfile` to be sure you have Indy set to automatically manage the `CHANGELOG.md` and `VERSION` files:
+Renovate will send an onboarding PR there the next time it runs (for now, every two hours).  You should also check your repos `Jenkinsfile` to be sure you have Indy set to automatically manage the `CHANGELOG.md` and `VERSION` files:
 
 ```groovy
 indy {
