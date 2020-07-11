@@ -54,6 +54,7 @@ module.exports = {
     "NerdWallet/nwgo-deployable",
     "NerdWallet/nwgo-echo",
     "NerdWallet/nwgo-encrypt",
+    "NerdWallet/nwgo-fdp-sdk",
     "NerdWallet/nwgo-http-api-client",
     "NerdWallet/nwgo-identity-sdk",
     "NerdWallet/nwgo-logging",
