@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.32](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.31...v1.1.32) (2020-07-11)
+
+
+### Bug Fixes
+
+* add pytest to popular Py libs ([63380d0](https://github.com/NerdWallet/renovate-integrations/commit/63380d0cf6133297678390ab655166268e98aad3))
+
 ### [1.1.31](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.30...v1.1.31) (2020-07-11)
 
 
