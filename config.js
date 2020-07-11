@@ -47,6 +47,7 @@ module.exports = {
     // Please keep this list alphabetized.
     // See https://nerdwallet.slack.com/archives/CU7H81PTP/p1594396900059600.
     "NerdWallet/eng-blog-client",
+    "NerdWallet/fdp-source-qa",
     "NerdWallet/nw_api",
     "NerdWallet/nwgo-api",
     "NerdWallet/nwgo-app-config",
