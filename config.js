@@ -79,6 +79,7 @@ module.exports = {
          "^decorator",
          "^docutils",
          "^flask",
+         "^freezegun",
          "^future",
          "^fuzzysearch",
          "^fuzzywuzzy",
