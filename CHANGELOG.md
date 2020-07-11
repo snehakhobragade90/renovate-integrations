@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.26](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.25...v1.1.26) (2020-07-11)
+
+
+### Bug Fixes
+
+* add nwgo-encrypt to core NW Go libs ([bc32686](https://github.com/NerdWallet/renovate-integrations/commit/bc326863da7a06bcb6d8b11c43565b89bf6dfa9a))
+
 ### [1.1.25](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.24...v1.1.25) (2020-07-11)
 
 
