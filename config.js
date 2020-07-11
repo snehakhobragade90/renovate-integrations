@@ -147,7 +147,6 @@ module.exports = {
       packagePatterns: [
         "identity-acls",
         "nw-api",
-        "nwutils",
         "nwpy-app-config",
         "nwpy-awskms",
         "nwpy-cli",
