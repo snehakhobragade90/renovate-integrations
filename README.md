@@ -80,7 +80,7 @@ Renovate supports most languages we use at NerdWallet, including:
 
 #### Local Testing
 
-###### NOTE: This is motly useful to floks working on the integration with Renovate itself.  #######
+###### NOTE: This is motly useful to folks working on the integration with Renovate itself.  #######
 
 If you just want to automated dependency updates for your project, please see the **Onboarding** section above.
 
