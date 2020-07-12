@@ -48,9 +48,12 @@ indy {
 
 ```
 
+![Video of editing the PR through the web](https://github.com/NerdWallet/renovate-integrations/blob/master/github.web.edit.pr.gif)
+
 ### Auto Merge
 
-In your repo's `CODEOWNERS` file, add the following line (similar to auto changelog, you can add this as a commit to the onboarding PR branch).
+As shown above, another improvement you can make to the workflow is to let BuildNerd automatically merge PRs you approve. Do this via adding BuildNerd as a code owner to the `CODEOWNERS` file, which we should always be managing via GitHub team memberships (see [GitHub CODEOWNERS docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners)).  Everyone should add the following line to CODEOWNERS and we will probably update all repos with it in the future.
+
 ```
 * @NerdWallet/source-code-bots
 ```
