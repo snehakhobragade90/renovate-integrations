@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.39](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.38...v1.1.39) (2020-07-12)
+
 ### [1.1.38](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.35...v1.1.38) (2020-07-12)
 
 ### [1.1.37](https://github.com/NerdWallet/renovate-integrations/compare/v1.1.35...v1.1.37) (2020-07-12)
