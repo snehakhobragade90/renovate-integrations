@@ -80,9 +80,7 @@ Renovate supports most languages we use at NerdWallet, including:
 
 #### Local Testing
 
-###### NOTE: This is motly useful to folks working on the integration with Renovate itself.  #######
-
-If you just want to automated dependency updates for your project, please see the **Onboarding** section above.
+###### NOTE: This is motly useful to folks devs working on the integration with Renovate. See above section **Onboarding** to use the service. #######
 
 Some use-cases for running Renovate locally:
 - You can test new configuration, for example package groups are useful to test. **Use --dry-run to test new config.**
