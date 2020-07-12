@@ -34,7 +34,7 @@ BuildNerd will send an onboarding PR there the next time it runs (currently ever
 
 ### Auto Changelog
 
-You should also check your repo's `Jenkinsfile` to be sure you have Indy set to automatically manage the `CHANGELOG.md` and `VERSION` files:
+In your repo's `Jenkinsfile`, be sure you have Indy set to automatically manage the `CHANGELOG.md` and `VERSION` files:
 
 ```groovy
 indy {
@@ -50,7 +50,14 @@ indy {
 
 ### Auto Merge
 
-Add a line with `* @NerdWallet/source-code-bots` to your `CODEOWNERS` so that you can just LGTM the update PR and BuildNerd will merge it when it next runs, as long as no new updates have arrived.  In that case, it will update the PR.
+In your repo's `CODEOWNERS` file, add this line:
+```
+* @NerdWallet/source-code-bots
+```
+
+That will make it so that if BuildNerd gets an LGTM on an update PR and the PR passes tests, BuildNerd will merge the PR automatically.  See [this example PR](https://github.com/NerdWallet/yak/pull/587).
+
+Without this, BuildNerd will not automatically merge PRs even if they are approved and pass tests.
 
 ## Usage
 
