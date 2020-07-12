@@ -66,7 +66,7 @@ Without this, BuildNerd will not automatically merge PRs even if they are approv
 
 ## Usage
 
-This project is auto-deployed via Jenkins and Museum (see the `app.yml` file's `continuous_deploy` section).  That deploy updates an AWS ECS container definition which runs every two hours.  The container runs our app, which enters at the `index.js` entry point.  We launch `Renovate` in that script.
+This project is auto-deployed via Jenkins and Museum (see the `app.yml` file's `continuous_deploy` section).  That deploy updates an AWS ECS container definition which runs as a scheduled task every two hours.  The container runs our app, which enters at the `index.js` entry point.  We launch `Renovate` in that script.
 
 Renovate supports most languages we use at NerdWallet, including:
 - Go
