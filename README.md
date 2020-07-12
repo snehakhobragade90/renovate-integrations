@@ -30,7 +30,11 @@ module.exports = {
 };
 ```
 
-Renovate will send an onboarding PR there the next time it runs (currently every two hours).  You should also check your repos `Jenkinsfile` to be sure you have Indy set to automatically manage the `CHANGELOG.md` and `VERSION` files:
+BuildNerd will send an onboarding PR there the next time it runs (currently every two hours). 
+
+### Auto Changelog
+
+You should also check your repo's `Jenkinsfile` to be sure you have Indy set to automatically manage the `CHANGELOG.md` and `VERSION` files:
 
 ```groovy
 indy {
@@ -44,6 +48,9 @@ indy {
 
 ```
 
+### Auto Merge
+
+Add a line with `* @NerdWallet/source-code-bots` to your `CODEOWNERS` so that you can just LGTM the update PR and BuildNerd will merge it when it next runs, as long as no new updates have arrived.  In that case, it will update the PR.
 
 ## Usage
 
