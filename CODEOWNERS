@@ -1,0 +1,6 @@
+# See: https://help.github.com/articles/about-codeowners/
+* @NerdWallet/source-code-bots
+# TODO(dsmith): make a group "renovate-owners".
+app.yml @dds @pjain-nw @piperchester
+index.js @piperchester
+package*.json @piperchester
