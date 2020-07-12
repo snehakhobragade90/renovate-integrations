@@ -54,7 +54,7 @@ indy {
 
 ### Auto Merge
 
-As shown above, another improvement you can make to the workflow is to let BuildNerd automatically merge PRs you approve. Add BuildNerd as a code owner to the `CODEOWNERS` file via adding the team `@NerdWallet/source-code-bots` as a general code owner (see [GitHub CODEOWNERS docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners)).  Everyone should add the following line to CODEOWNERS and we will probably update all repos with it in the future.
+As shown above, another improvement you can make to the workflow is to let BuildNerd automatically merge PRs you approve. Add BuildNerd as a code owner to the `CODEOWNERS` file via adding the team `@NerdWallet/source-code-bots` as a general code owner (see [GitHub CODEOWNERS docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners)).  Everyone should add the following line to `CODEOWNERS` and we will probably update all repos with it in the future.
 
 ```
 * @NerdWallet/source-code-bots
