@@ -66,13 +66,13 @@ Without this, BuildNerd will not automatically merge PRs even if they are approv
 
 ## Usage
 
-This project is deployed with [Gift Shop][giftshop] and the `index.js` entry point is invoked on a scheduled cadence in a [ProdEng cluster][ops-apps]. It periodically opens pull requests against repositories that've opted in.
+This project is auto-deployed via Jenkins and Museum (see the `app.yml` file's `continuous_deploy` section).  That deploy updates an AWS ECS container definition which runs every two hours.  The container runs our app, which enters at the `index.js` entry point.  We launch `Renovate` in that script.
 
 Renovate supports most languages we use at NerdWallet, including:
 - Go
 - JavaScript
 - Python
-
+- More
 
 ### Development
 
@@ -80,9 +80,16 @@ Renovate supports most languages we use at NerdWallet, including:
 
 #### Local Testing
 
-Until we've widespread adoption, repos will opt in to automated dependency goodness.
+###### NOTE: This is motly useful to floks working on the integration with Renovate itself.  #######
 
-For local testing, you can isolate specific repos in
+If you just want to automated dependency updates for your project, please see the **Onboarding** section above.
+
+Some use-cases for running Renovate locally:
+- You can test new configuration, for example package groups are useful to test. **Use --dry-run to test new config.**
+- You can debug problems better than may be visibile in the logs.
+- You can run it locally with your own GitHub personal access token to manually generate updates for one or more repos (those will come from your user, not BuildNerd).
+
+For local testing, you may want to edit the `repositories` section of the config to only a few selected repos for testing.
 
 ```js
 // config.js
@@ -93,11 +100,11 @@ module.exports = {
   ],
 };
 ```
-
  and then invoke Renovate with a [GitHub personal access token][Renovate PAT],
 
 ```sh
-./node_modules/.bin/renovate --token=YOUR_GITHUB_PERSONAL_ACCESS_TOKEN
+export token=MY_GITHUB_PERSONAL_ACCESS_TOKEN
+./node_modules/.bin/renovate --token=$token --dry-run
 ```
 
 This should open a PR against that repo in question. See the [Renovate onboard PR] for more details.
