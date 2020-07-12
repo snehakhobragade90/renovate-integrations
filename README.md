@@ -39,7 +39,7 @@ In your repo's `Jenkinsfile`, be sure you have Indy set to automatically manage 
 ```groovy
 indy {
     base = 'ubuntu-2018.12.18'
-    install = true  // Everyone should have this so that when Indy breaks (*not if*), we have the ability to set this false and get on with our lives while the issue gets fixed at HEAD.
+    install = true  // Everyone should have this so that when a new version of Indy causes an issue with your repo, you have the ability to set this false and and use the stble version while the problem gets fixed.
     env = [
         "INDY_STANDARD_CHANGELOG=yes",
         "INDY_STANDARD_VERSION=yes",
