@@ -48,6 +48,8 @@ indy {
 
 ```
 
+##### Example of editing a PR through the web (see next section for the contents of the change being made).
+
 ![Video of editing the PR through the web](https://github.com/NerdWallet/renovate-integrations/blob/master/github.web.edit.pr.gif)
 
 ### Auto Merge
