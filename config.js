@@ -4,7 +4,7 @@
  * ignore packages, set the GitHub personal access token, etc here.
  */
 
- // Renovate requires a GitHub token, which `nwjs-app-config`
+// Renovate requires a GitHub token, which `nwjs-app-config`
 // will automatically decrypt from the devops.yml app-config.
 const config = require("@nerdwallet/app-config");
 
