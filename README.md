@@ -34,7 +34,7 @@ When Renovate next runs (currently every two hours), BuildNerd will send an onbo
 
 ### Auto Changelog
 
-In your repo's `Jenkinsfile`, you will want to have Indy set to automatically manage the `CHANGELOG.md` and `VERSION` files.  This can be done ahead of receiving the onboarding PR branch, or when you recieve it, you can add it as a commit to that branch (editing the file in the branch of the PR through the web in GitHub works fine).
+In your repo's `Jenkinsfile`, you will want to have Indy set to automatically manage the `CHANGELOG.md` and `VERSION` files (this step is **required** if you have an existing `CHANGELOG.md` file in your repo; it's recommended for all repos and may become the default).  This can be done ahead of receiving the onboarding PR branch, or when you recieve it, you can add it as a commit to that branch (editing the file in the branch of the PR through the web in GitHub works fine).
 
 ```groovy
 indy {
