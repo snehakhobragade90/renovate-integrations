@@ -30,11 +30,11 @@ module.exports = {
 };
 ```
 
-BuildNerd will send an onboarding PR there the next time it runs (currently every two hours). 
+When Renovate next runs (currently every two hours), BuildNerd will send an onboarding PR.
 
 ### Auto Changelog
 
-In your repo's `Jenkinsfile`, be sure you have Indy set to automatically manage the `CHANGELOG.md` and `VERSION` files:
+In your repo's `Jenkinsfile`, you will want to have Indy set to automatically manage the `CHANGELOG.md` and `VERSION` files.  When you receive the onboarding PR, if your project does not already have this, add it as a commit to the onboarding PR branch.
 
 ```groovy
 indy {
@@ -50,7 +50,7 @@ indy {
 
 ### Auto Merge
 
-In your repo's `CODEOWNERS` file, add this line:
+In your repo's `CODEOWNERS` file, add the following line (similar to auto changelog, you can add this as a commit to the onboarding PR branch).
 ```
 * @NerdWallet/source-code-bots
 ```
