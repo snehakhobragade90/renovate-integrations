@@ -14,6 +14,7 @@ module.exports = {
   ignoreDeps: [
     "babel-eslint",
     "babel-jest",
+    "core-js",
     "eslint",
     "eslint-config-airbnb",
     "eslint-config-prettier",
