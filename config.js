@@ -9,6 +9,8 @@
 const config = require("@nerdwallet/app-config");
 
 module.exports = {
+  // This should be continually
+  // updated to refine signal:noise
   ignoreDeps: [
     "babel-eslint",
     "babel-jest",
@@ -17,6 +19,8 @@ module.exports = {
     "eslint-config-prettier",
     "eslint-plugin-jest",
     "prettier",
+    "react-redux",
+    "react-router",
   ],
   logLevel: "info",
   logFile: "renovate.log",
@@ -67,7 +71,7 @@ module.exports = {
     {
       groupName: "popular Python libs",
       languages: ["python"],
-      updateTypes: ["patch", "minor"],      
+      updateTypes: ["patch", "minor"],
       packagePatterns: [
          "^aniso8601",
          "^billiard",
@@ -165,6 +169,16 @@ module.exports = {
         "nwpy-service-discovery",
         "nwpy-validation",
         "nwpy-yakclient",
+      ],
+    },
+    {
+      groupName: "core NW JavaScript libs",
+      languages: ["javascript"],
+      updateTypes: ["patch", "minor"],
+      packagePatterns: [
+        "nw-app-build",
+        "nw-app-module",
+        "nwjs-app-config"
       ],
     },
   ],
