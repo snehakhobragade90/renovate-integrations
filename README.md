@@ -101,7 +101,7 @@ module.exports = {
  and then invoke Renovate with a [GitHub personal access token][Renovate PAT],
 
 ```sh
-export token=MY_GITHUB_PERSONAL_ACCESS_TOKEN
+token=MY_GITHUB_PERSONAL_ACCESS_TOKEN
 ./node_modules/.bin/renovate --token=$token --dry-run
 ```
 
