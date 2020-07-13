@@ -29,6 +29,7 @@ module.exports = {
     {
       groupName: "core NW Go libs",
       languages: ["golang"],
+      updateTypes: ["patch", "minor"],
       packagePatterns: [
          "nwgo-api",
          "nwgo-app-config",
@@ -46,6 +47,7 @@ module.exports = {
     {
       groupName: "popular Go libs",
       languages: ["golang"],
+      updateTypes: ["patch", "minor"],
       packagePatterns: [
          "^cloud.google.com/go",
          "^github.com/aws/aws-sdk-go",
@@ -65,6 +67,7 @@ module.exports = {
     {
       groupName: "popular Python libs",
       languages: ["python"],
+      updateTypes: ["patch", "minor"],      
       packagePatterns: [
          "^aniso8601",
          "^billiard",
@@ -144,6 +147,7 @@ module.exports = {
     {
       groupName: "core NW Python libs",
       languages: ["python"],
+      updateTypes: ["patch", "minor"],
       packagePatterns: [
         "identity-acls",
         "nw-api",
