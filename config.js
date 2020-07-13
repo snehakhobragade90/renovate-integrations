@@ -193,6 +193,7 @@ module.exports = {
     "NerdWallet/nwgo-marketplace-client",
     "NerdWallet/nwgo-metrics",
     "NerdWallet/nwgo-resty",
+    "NerdWallet/nwjs-dependency-tools",
     "NerdWallet/nwjs-deprecate",
     "NerdWallet/nwjs-yakclient",
     "NerdWallet/nwpy-app-config",
